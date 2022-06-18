@@ -17,7 +17,7 @@ train_datagen = ImageDataGenerator(
 
 
 train_set = train_datagen.flow_from_directory(
-        'C:\\Users\\Chandramouli\\.spyder-py3\\CNN\\dataset\\training_set',
+        'C:\\Users\\Dharanidharan\\spyder-py3\\CNN\\dataset\\training_set',
         target_size=(64, 64),#final sizes of images fed to convo nn
         batch_size=32,
         class_mode='binary')#binary classification
@@ -25,7 +25,7 @@ train_set = train_datagen.flow_from_directory(
 #preprocessing the testset
 test_datagen = ImageDataGenerator(rescale=1./255)#no transformation only scaling
 test_set = test_datagen.flow_from_directory(
-        'C:\\Users\\Chandramouli\\.spyder-py3\\CNN\\dataset\\test_set',
+        'C:\\Users\\Dharanidharan\\spyder-py3\\CNN\\dataset\\test_set',
         target_size=(64, 64),
         batch_size=32,
         class_mode='binary')
